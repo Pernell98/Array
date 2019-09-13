@@ -6,7 +6,9 @@ namespace Arrays_Program
     {
         static void Main(string[] args)
         {
-            
+            //new Abstracts();
+            new Strings();
+            new Primitives();
         }
     }
 }

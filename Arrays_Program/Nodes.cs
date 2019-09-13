@@ -6,6 +6,6 @@ namespace Arrays_Program
 {
     public class Nodes
     {
-        //Initalize string variable firstName
+        public string firstName;
     }
 }

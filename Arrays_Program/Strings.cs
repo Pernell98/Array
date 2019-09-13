@@ -9,21 +9,38 @@ namespace Arrays_Program
 
         public Strings()
         {
+            string[] input = inputStrings();
 
+            displayElements(input);
+            displayElementsBackwards(input);
         }
-        public void displayElements()
+        public void displayElements(string [] array)
         {
-            //displays the integers for the string backward
+            for(int a =0; a < array.Length; a++)
+            {
+                Console.WriteLine(array[a]);
+            }
         }
 
-        public void displayElementsBackwards()
+        public void displayElementsBackwards(string [] array)
         {
-            //displays the integers for the strings backward
+            for(int a = array.Length -1; a < 0; a--)
+            {
+                Console.WriteLine(array[a]);
+            }
         }
 
         public string[] inputStrings()
         {
-            //input for the integers in the string array
+            string[] input = new string[3];
+
+            for(int a = 0; a < input.Length; a++)
+            {
+                Console.WriteLine("enter each string");
+                input[a] = Console.ReadLine();
+            }
+
+            return input;
         }
     }
 }
